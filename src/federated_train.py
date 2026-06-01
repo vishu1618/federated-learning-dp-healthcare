@@ -18,7 +18,7 @@ def split_clients(X, y, num_clients=5):
     return clients
 
 
-def evaluatee(model, X_test, y_test):
+def evaluate(model, X_test, y_test):
     model.eval()
     with torch.no_grad():
         logits = model(X_test).squeeze()
