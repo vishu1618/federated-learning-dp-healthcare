@@ -7,4 +7,4 @@ class LogisticModel(nn.Module):
         self.linear = nn.Linear(input_dim, 1)
 
     def forward(self, x):
-        return self.linear(x)
+        return self.linear(x) 
